@@ -1,0 +1,88 @@
+/* Установите стиль для элемента body */
+body {
+    background-position: center;
+    backdrop-filter: blur(2px);
+    transition: background-image 2s ease-in-out;
+    background-size: cover;
+   
+}
+
+.picture1 {
+    width: 200px;
+    height: auto;
+    position: relative;
+    transition: transform .3s ease-out;
+    transform: translate(var(--x), var(--y));
+  }
+
+
+  .picture2 {
+    width: 200px;
+    height: auto;
+    position: relative;
+    transition: transform .3s ease-out;
+    transform: translate(var(--x), var(--y));
+  }
+  .picture3 {
+    width: 200px;
+    height: auto;
+    position: relative;
+    transition: transform .3s ease-out;
+    transform: translate(var(--x), var(--y));
+  }
+  .picture4 {
+    width: 200px;
+    height: auto;
+    position: relative;
+    transition: transform .3s ease-out;
+    transform: translate(var(--x), var(--y));
+  }
+  .picture5 {
+    width: 200px;
+    height: auto;
+    position: relative;
+    transition: transform .3s ease-out;
+    transform: translate(var(--x), var(--y));
+  }
+  .picture6 {
+    width: 200px;
+    height: auto;
+    position: relative;
+    transition: transform .3s ease-out;
+    transform: translate(var(--x), var(--y));
+  }
+  .picture7 {
+    width: 200px;
+    height: auto;
+    position: relative;
+    transition: transform .3s ease-out;
+    transform: translate(var(--x), var(--y));
+  }
+  .picture8 {
+    width: 200px;
+    height: auto;
+    position: relative;
+    transition: transform .3s ease-out;
+    transform: translate(var(--x), var(--y));
+  }
+  .picture9 {
+    width: 200px;
+    height: auto;
+    position: relative;
+    transition: transform .3s ease-out;
+    transform: translate(var(--x), var(--y));
+  }
+  .picture10 {
+    width: 200px;
+    height: auto;
+    position: relative;
+    transition: transform .3s ease-out;
+    transform: translate(var(--x), var(--y));
+  }
+  .picture11 {
+    width: 200px;
+    height: auto;
+    position: relative;
+    transition: transform .3s ease-out;
+    transform: translate(var(--x), var(--y));
+  }
