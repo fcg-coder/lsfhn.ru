@@ -21,6 +21,8 @@ body {
    
 }
 
+
+
 .picture1 {
     width: 370px;
     height: auto;
@@ -28,6 +30,7 @@ body {
     transition: transform .3s ease-out;
     transform: translate(var(--x), var(--y));
   }
+
 
 
   .picture2 {
