@@ -1,17 +1,17 @@
 
 // Определите массив изображений
 var images = [
-    "images/polunochnoe/1.png",
-    "images/polunochnoe/2.png",
-    "images/polunochnoe/3.png",
-    "images/polunochnoe/4.png",
-    "images/polunochnoe/5.png",
-    "images/polunochnoe/6.png",
-    "images/polunochnoe/7.png",
-    "images/polunochnoe/8.png",
-    "images/polunochnoe/9.png",
-    "images/polunochnoe/10.png",
-    "images/polunochnoe/11.png"
+    "images/polunochnoe/1.webp",
+    "images/polunochnoe/2.webp",
+    "images/polunochnoe/3.webp",
+    "images/polunochnoe/4.webp",
+    "images/polunochnoe/5.webp",
+    "images/polunochnoe/6.webp",
+    "images/polunochnoe/7.webp",
+    "images/polunochnoe/8.webp",
+    "images/polunochnoe/9.webp",
+    "images/polunochnoe/10.webp",
+    "images/polunochnoe/11.webp"
 ];
 
 // Выберите случайное изображение из массива
