@@ -182,8 +182,8 @@ picture11.addEventListener('mouseover', () => {
 
 
   // Генерируем случайные значения top и left относительно окна браузера
-  var randomTop = Math.floor(Math.random() * window.innerHeight / 2);
-  var randomLeft = Math.floor(Math.random() * window.innerWidth / 8);
+  var randomTop = Math.floor(Math.random() * window.innerHeight);
+  var randomLeft = Math.floor(Math.random() * window.innerWidth);
   
    // Присваиваем новые значения свойствам top и left элемента
    picture1.style.top = randomTop + "px";
@@ -192,8 +192,8 @@ picture11.addEventListener('mouseover', () => {
 
 
   // Генерируем случайные значения top и left относительно окна браузера
-  var randomTop = Math.floor(Math.random() * window.innerHeight / 2);
-  var randomLeft = Math.floor(Math.random() * window.innerWidth / 8);
+  var randomTop = Math.floor(Math.random() * window.innerHeight);
+  var randomLeft = Math.floor(Math.random() * window.innerWidth);
   
    // Присваиваем новые значения свойствам top и left элемента
    picture2.style.top = randomTop + "px";
@@ -201,24 +201,24 @@ picture11.addEventListener('mouseover', () => {
 
 
   // Генерируем случайные значения top и left относительно окна браузера
-  var randomTop = Math.floor(Math.random() * window.innerHeight / 2);
-  var randomLeft = Math.floor(Math.random() * window.innerWidth / 8);
+  var randomTop = Math.floor(Math.random() * window.innerHeight);
+  var randomLeft = Math.floor(Math.random() * window.innerWidth);
   
    // Присваиваем новые значения свойствам top и left элемента
    picture3.style.top = randomTop + "px";
    picture3.style.left = randomLeft + "px"
 
   // Генерируем случайные значения top и left относительно окна браузера
-  var randomTop = Math.floor(Math.random() * window.innerHeight / 2);
-  var randomLeft = Math.floor(Math.random() * window.innerWidth / 8);
+  var randomTop = Math.floor(Math.random() * window.innerHeight);
+  var randomLeft = Math.floor(Math.random() * window.innerWidth);
   
    // Присваиваем новые значения свойствам top и left элемента
    picture4.style.top = randomTop + "px";
    picture4.style.left = randomLeft + "px"
 
   // Генерируем случайные значения top и left относительно окна браузера
-  var randomTop = Math.floor(Math.random() * window.innerHeight / 2);
-  var randomLeft = Math.floor(Math.random() * window.innerWidth / 8);
+  var randomTop = Math.floor(Math.random() * window.innerHeight);
+  var randomLeft = Math.floor(Math.random() * window.innerWidth);
   
    // Присваиваем новые значения свойствам top и left элемента
    picture5.style.top = randomTop + "px";
@@ -226,8 +226,8 @@ picture11.addEventListener('mouseover', () => {
 
 
      // Генерируем случайные значения top и left относительно окна браузера
-  var randomTop = Math.floor(Math.random() * window.innerHeight / 2);
-  var randomLeft = Math.floor(Math.random() * window.innerWidth / 8);
+  var randomTop = Math.floor(Math.random() * window.innerHeight);
+  var randomLeft = Math.floor(Math.random() * window.innerWidth);
   
    // Присваиваем новые значения свойствам top и left элемента
    picture6.style.top = randomTop + "px";
@@ -235,8 +235,8 @@ picture11.addEventListener('mouseover', () => {
 
 
   // Генерируем случайные значения top и left относительно окна браузера
-  var randomTop = Math.floor(Math.random() * window.innerHeight / 2);
-  var randomLeft = Math.floor(Math.random() * window.innerWidth / 8);
+  var randomTop = Math.floor(Math.random() * window.innerHeight);
+  var randomLeft = Math.floor(Math.random() * window.innerWidth);
   
    // Присваиваем новые значения свойствам top и left элемента
    picture7.style.top = randomTop + "px";
@@ -244,16 +244,16 @@ picture11.addEventListener('mouseover', () => {
 
 
   // Генерируем случайные значения top и left относительно окна браузера
-  var randomTop = Math.floor(Math.random() * window.innerHeight / 2);
-  var randomLeft = Math.floor(Math.random() * window.innerWidth / 8);
+  var randomTop = Math.floor(Math.random() * window.innerHeight);
+  var randomLeft = Math.floor(Math.random() * window.innerWidth);
   
    // Присваиваем новые значения свойствам top и left элемента
    picture8.style.top = randomTop + "px";
    picture8.style.left = randomLeft + "px"
 
   // Генерируем случайные значения top и left относительно окна браузера
-  var randomTop = Math.floor(Math.random() * window.innerHeight / 2);
-  var randomLeft = Math.floor(Math.random() * window.innerWidth / 8);
+  var randomTop = Math.floor(Math.random() * window.innerHeight);
+  var randomLeft = Math.floor(Math.random() * window.innerWidth);
   
    // Присваиваем новые значения свойствам top и left элемента
    picture9.style.top = randomTop + "px";
@@ -261,8 +261,8 @@ picture11.addEventListener('mouseover', () => {
 
 
   // Генерируем случайные значения top и left относительно окна браузера
-  var randomTop = Math.floor(Math.random() * window.innerHeight / 2);
-  var randomLeft = Math.floor(Math.random() * window.innerWidth / 8);
+  var randomTop = Math.floor(Math.random() * window.innerHeight);
+  var randomLeft = Math.floor(Math.random() * window.innerWidth);
   
    // Присваиваем новые значения свойствам top и left элемента
    picture10.style.top = randomTop + "px";
@@ -270,8 +270,8 @@ picture11.addEventListener('mouseover', () => {
 
 
      // Генерируем случайные значения top и left относительно окна браузера
-  var randomTop = Math.floor(Math.random() * window.innerHeight / 2);
-  var randomLeft = Math.floor(Math.random() * window.innerWidth / 8);
+  var randomTop = Math.floor(Math.random() * window.innerHeight);
+  var randomLeft = Math.floor(Math.random() * window.innerWidth);
   
    // Присваиваем новые значения свойствам top и left элемента
    picture11.style.top = randomTop + "px";

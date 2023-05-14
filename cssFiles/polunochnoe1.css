@@ -18,11 +18,22 @@ body {
     background-repeat: no-repeat;
     font-size: 20px ;
     color: white;
+    display: flex;
    
 }
 
+img{
+  width: 300px;;
+  opacity: 1;
+}
+
+.texForPicture{
+  width: 300px;
+  font-size:14px ;
+}
+
 .picture1 {
-    width: 370px;
+    width: 0px;
     height: auto;
     position: relative;
     transition: transform .3s ease-out;
@@ -31,70 +42,70 @@ body {
 
 
   .picture2 {
-    width: 370px;
+    width: 0px;
     height: auto;
     position: relative;
     transition: transform .3s ease-out;
     transform: translate(var(--x), var(--y));
   }
   .picture3 {
-    width: 370px;
+    width: 0px;
     height: auto;
     position: relative;
     transition: transform .3s ease-out;
     transform: translate(var(--x), var(--y));
   }
   .picture4 {
-    width: 370px;
+    width: 0px;
     height: auto;
     position: relative;
     transition: transform .3s ease-out;
     transform: translate(var(--x), var(--y));
   }
   .picture5 {
-    width: 370px;
+    width: 0px;
     height: auto;
     position: relative;
     transition: transform .3s ease-out;
     transform: translate(var(--x), var(--y));
   }
   .picture6 {
-    width: 370px;
+    width: 0px;
     height: auto;
     position: relative;
     transition: transform .3s ease-out;
     transform: translate(var(--x), var(--y));
   }
   .picture7 {
-    width: 370px;
+    width: 0px;
     height: auto;
     position: relative;
     transition: transform .3s ease-out;
     transform: translate(var(--x), var(--y));
   }
   .picture8 {
-    width: 370px;
+    width: 0px;
     height: auto;
     position: relative;
     transition: transform .3s ease-out;
     transform: translate(var(--x), var(--y));
   }
   .picture9 {
-    width: 370px;
+    width: 0px;
     height: auto;
     position: relative;
     transition: transform .3s ease-out;
     transform: translate(var(--x), var(--y));
   }
   .picture10 {
-    width: 370px;
+    width: 0px;
     height: auto;
     position: relative;
     transition: transform .3s ease-out;
     transform: translate(var(--x), var(--y));
   }
   .picture11 {
-    width: 370px;
+    width: 0px;
     height: auto;
     position: relative;
     transition: transform .3s ease-out;
