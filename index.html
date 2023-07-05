@@ -1,75 +1,6 @@
 <!DOCTYPE html>
 <html lang="eng" style="width: 100%; cursor: url('images/cursor.png'), auto;">
 
-<!-- Чтобы открывать разные страницы HTML в зависимости от того, с какого устройства пользователь заходит на сайт, можно использовать медиа-запросы CSS и JavaScript.
-
-Вот пример кода, который позволяет перенаправлять пользователей на разные страницы в зависимости от их устройств:
-
-<!DOCTYPE html>
-
-<html>
-
-<head>
-
-  <title>Моя страница</title>
-
-
-
-   Медиа запрос для перенаправления на другую страницу 
-
-  <script type="text/javascript">
-
-    if (screen.width <= 480) {
-
-      window.location = "mobile.html";
-
-    }
-
-    else {
-
-      window.location = "desktop.html";
-
-    }
-
-  </script>
-
-</head>
-
-<body>
-
-
-
- Контент, который будет отображаться только на десктопе 
-
-<div class="desktop-only">
-
- h1>Добро пожаловать на мою страницу!</h1>
-
-</div>
-
-
-
- Контент, который будет отображаться только на мобильных устройствах 
-
-<div class="mobile-only">
-
- h1>Добро пожаловать на мою мобильную страницу!</h1>
-
-</div>
-
-
-
-</body>
-
-</html>
-
-
-
-В этом примере мы используем медиа-запрос в JavaScript для определения ширины экрана пользователя. Если ширина экрана меньше или равна 480px, пользователь будет перенаправлен на страницу mobile.html, а если больше - на страницу desktop.html. 
-
-Вы можете использовать любые другие значения медиа-запросов, чтобы определить, какое устройство использует пользователь. Также можете настроить контент для каждой страницы в соответствии с вашими потребностями.
- -->
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width" , initial-scale=1.0">
@@ -97,7 +28,7 @@
 			background-size: 90%;
 			transition: top 800ms ease-in-out;
 			z-index: 1;
-			width: 110vW;
+			width: 100%;
 			height: 100vh;
 			z-index: 0;
 
@@ -112,7 +43,7 @@
 			background-size: 90%;
 			transition: top 800ms ease-in-out;
 			z-index: 1;
-			width: 110vW;
+			width: 100%;
 			height: 100vh;
 			z-index: 0;
 
@@ -126,7 +57,7 @@
 			background-size: 90%;
 			transition: top 800ms ease-in-out;
 			z-index: 1;
-			width: 110vW;
+			width: 100%;
 			height: 100vh;
 			z-index: 0;
 
@@ -211,11 +142,14 @@
 	<section>
 
 
-		<div style="height:80%;">
-			<p align="center">
+		<div style="width: 100%;     display: flex;
+		align-content: space-around;
+		justify-content: flex-end;
+    flex-direction: column;">
+			<p align="center" style="position: relative;">
 				<img src="images/1.webp" width="200" height="200" alt="Фотография">
 			</p>
-			<h2 style="max-width: 1000px; line-height: 1.3; margin: auto; height: 30%; text-align: center;">DARIA IVANS
+			<h2 style="max-width: 1000px; line-height: 1.3; margin: auto; text-align: center;">DARIA IVANS
 				IS
 				XENO-MEDIA ARTIST, BACHELOR OF PHILOSOPHY AND MASTER OF 'ART&SCIENCE', SHE/HER IS A CYBERWITCH
 				WITH AN ABILITY TO INVOKE EXTRAORDINARY OCCURRENCES IN BOTH PHYSICAL AND DIGITAL REALITIES</h2>
@@ -273,6 +207,8 @@
 
 
 												<li> <a href="https://www.are.na/lilili-li/kidpix-00s">⋇⊶⊰❣⊱⊷⋇ kidpix 00s ⋇⊶⊰❣⊱⊷⋇ </a> </li>
+												
+												<li> <a href="METAVERS/metavers.html">METAVERS</a> </li>
 
 												
 
@@ -288,30 +224,31 @@
 									</p>
 
 
+																		<!-- Подвал -->
+																		<div style="line-height: 0.5;" align="center">
+
+																			<p> <img src="images/lshfn.png" width="100" height="50" alt="INSAGRAMM" /> <br />
+																				<font-size="3">Xeno-digital artist </font><br />
+																			<P> </P>
+																			<a href="https://www.instagram.com/_lshfn/"><img src="images/i.png" width="30" height="30"
+																				alt="INSAGRAMM" /></a>
+																			<a href="https://t.me/lshfn"><img src="images/t.png" width="30" height="30" alt="TELEGRAMM" /></a>
+																			<br />
+																			<p class="createdby" style="margin: 5px 0 0 0">created by <a
+																				href="https://t.me/fcg000">&lt;/fcg&gt;</a></p>
+																			<p class="createdby" style="margin: 5px 0 0 0">
+																				<font-size="1">2023</font>
+																			</p>
+																		</div>
 		</div >
 
-									<!-- Подвал -->
-									<div style="line-height: 0.5;" align="center">
 
-										<p> <img src="images/lshfn.png" width="100" height="50" alt="INSAGRAMM" /> <br />
-											<font-size="3">Xeno-digital artist </font><br />
-										<P> </P>
-										<a href="https://www.instagram.com/_lshfn/"><img src="images/i.png" width="30" height="30"
-											alt="INSAGRAMM" /></a>
-										<a href="https://t.me/lshfn"><img src="images/t.png" width="30" height="30" alt="TELEGRAMM" /></a>
-										<br />
-										<p class="createdby" style="margin: 5px 0 0 0">created by <a
-											href="https://t.me/fcg000">&lt;/fcg&gt;</a></p>
-										<p class="createdby" style="margin: 5px 0 0 0">
-											<font-size="1">2023</font>
-										</p>
-									</div>
 
 	</section >
 
 
 
-									<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 							<script>
 			$('body').mousemove(function (e) {
 				let winWidth = window.innerWidth;
