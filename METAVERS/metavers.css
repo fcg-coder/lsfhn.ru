@@ -11,9 +11,7 @@ body{
     background-size: 150%;
     background: black;
 }
-canvas{
-    margin: auto;
-}
+
 .intro{
    
     width: 90%;
@@ -56,12 +54,10 @@ canvas{
     line-height: normal;
 
 }
-.model{
-    width: 100px;
+#model{
+    display: block;
     height: 100%;
     width: 40%;
-    flex-shrink: 0;
-    border-radius: 117px;
 
 }
 
