@@ -12,12 +12,12 @@ function init() {
     scene.background = new THREE.Color("black");
 
     //Camera
-    const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight , 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight , 0.1, 100);
     camera.position.set(1, 0.1, 1)
 
     //render
     const renderer = new THREE.WebGLRenderer({antialias: true})
-    renderer.setSize( window.innerWidth/1.5, window.innerHeight,false)
+    renderer.setSize( window.innerWidth, window.innerHeight,false)
     container.appendChild(renderer.domElement)
 
 
@@ -105,10 +105,18 @@ function init() {
     window.addEventListener('resize', onWindowResize, false)
     
     function onWindowResize() {
-        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.aspect = window.innerWidth / window.innerHeight / 1.75;
         camera.updateProjectionMatrix();
 
-        renderer.setSize( window.innerWidth/1.5, window.innerHeight)
+        renderer.setSize( window.innerWidth/1.75, window.innerHeight,false)
+    }
+
+    function onWindowResizeMOB() {
+        camera.aspect = window.innerWidth/ window.innerHeight;
+        camera.updateProjectionMatrix();
+
+        renderer.setSize( window.innerWidth, window.innerHeight/2)
+
     }
 
     // Animate
@@ -117,8 +125,21 @@ function init() {
         controls.update();
         renderer.render(scene, camera)
     }
+
+
+
+
     animate()
-    onWindowResize()
+   
+
+
+    if (screen.width <= 500) {
+
+        onWindowResizeMOB()
+    
+      }else{
+        onWindowResize()
+      }
 
 }
 

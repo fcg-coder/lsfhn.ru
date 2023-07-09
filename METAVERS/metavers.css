@@ -90,19 +90,26 @@ body{
 }
   
  @media (max-width: 500px) {
+    body{
+
+    margin: 0;
+    }
     .intro{
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+  
+    flex-wrap: wrap;
+    align-content: stretch;
+    margin: 0;
+    width: 100%;
     }
     
     .text{
         font-size: 85%;
         width: 90%;
         height: auto;
-    margin: 10px;
+    margin: auto;
     }
     .text1{
         font-size: 200%;
@@ -111,8 +118,7 @@ body{
         font-size: 100%;
     }
     .model{
-        width: 90%;
-        height: 50%;
+      
     }
 }
   

@@ -111,14 +111,35 @@ function init() {
         renderer.setSize( window.innerWidth/1.75, window.innerHeight,false)
     }
 
+    function onWindowResizeMOB() {
+        camera.aspect = window.innerWidth/ window.innerHeight;
+        camera.updateProjectionMatrix();
+
+        renderer.setSize( window.innerWidth, window.innerHeight/2)
+
+    }
+
     // Animate
     function animate() {
         requestAnimationFrame(animate)
         controls.update();
         renderer.render(scene, camera)
     }
+
+
+
+
     animate()
-    onWindowResize()
+   
+
+
+    if (screen.width <= 500) {
+
+        onWindowResizeMOB()
+    
+      }else{
+        onWindowResize()
+      }
 
 }
 
