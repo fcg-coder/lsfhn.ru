@@ -3,6 +3,7 @@ html{
     background: black;
     font-family: 'Josefin Sans', sans-serif;
     cursor: url(cursor.png), auto;
+    overflow-x: hidden;
 }
 body{
     background-size: 120%;
