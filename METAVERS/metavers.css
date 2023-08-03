@@ -15,62 +15,33 @@ body{
     background: black;
 }
 .METAVERS{
+    animation:ease-in-out;
     animation-name: MET;
-    animation-duration: 5s;
+    animation-duration: 2s;
     display: flex;
     height: 0%;
     align-items: center;
     justify-content: center;
-     transition: all ease-in-out;
-     will-change: auto;
      font-size: 100px;
-     overflow: hidden;
     
 }
 @keyframes MET{
-    0%   {
-        color: white;
-        opacity: 1;   
-            height: 100%;
-               
-               
+   0%{
+    color: white;
+    height: 100%;
+    font-size: 100px;
     
-        }
-
- 
-    30%{
-        color: white;
-        opacity: 1;   
-        
-           
-        height: 100%;
-
-    }
-
-    45%{
-        color: white;
-        opacity: 1;   
-        
-           
-        filter: blur(0px);
-           
-
-    }
- 
-    65%{
-        color: black;
-        opacity: 0;   
-        height: 100%;
-        filter: blur(100px);
-    }
-
-
-
-    100%{
-    color: black;
+   }
+   75%{
+    color: white;
+    height: 100%;
+    font-size:  100px;
+   }
+   100%{
+    font-size: 0px;
+    opacity: 0;
     height: 0%;
-    transition: all ease-in-out;
-    }
+   }
 }
 
 
@@ -82,11 +53,9 @@ body{
     margin: auto;
     display: flex;
  
-
-    animation-name:  intro;
-    animation-duration: 6s;
   transition: all;
 }
+
 .intro::after{
     opacity: 1;
 }
@@ -102,18 +71,6 @@ body{
 
 
 
-  @keyframes intro{
-    0%{
-        opacity: 0;
-        
-    }
-    75%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-  }
 
 .text{
     
