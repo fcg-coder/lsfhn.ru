@@ -17,28 +17,46 @@ body{
 .METAVERS{
     animation:ease-in-out;
     animation-name: MET;
-    animation-duration: 2s;
+    animation-duration: 4s;
     display: flex;
     height: 0%;
     align-items: center;
-    justify-content: center;
+    margin: auto;
+    justify-content: space-around;
      font-size: 100px;
     
 }
 @keyframes MET{
-   0%{
+    0%{
+       color: white;
+        filter: blur(50px);
+        height: 100%;
+    }
+   20%{
+    filter: blur(0px);
     color: white;
-    height: 100%;
-    font-size: 100px;
-    
+    width: 100%;
+   }
+
+   40%{
+    filter: blur(0px);
+    width: 100%;
+   }
+
+   60%{
+    width: 40%;
    }
    75%{
     color: white;
     height: 100%;
-    font-size:  100px;
+    width: 40%;
+    opacity: 1;
+    filter: blur(0px);
    }
    100%{
-    font-size: 0px;
+    filter: blur(50px);
+    width: 0%;
+    color: black;
     opacity: 0;
     height: 0%;
    }
@@ -52,10 +70,27 @@ body{
     height: 100%;
     margin: auto;
     display: flex;
- 
+ animation-name: intro;
+ animation-duration: 8s;
   transition: all;
 }
-
+@keyframes intro {
+0%{
+    opacity: 0;
+}
+45%{
+    opacity: 0;
+    filter: blur(10px);
+}
+65%{
+    filter: blur(0px);
+}
+100%{
+    
+    opacity: 1;
+}
+    
+}
 .intro::after{
     opacity: 1;
 }
