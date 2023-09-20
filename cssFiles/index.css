@@ -91,6 +91,7 @@ li {
   cursor: url('images/cursor.png'), auto;
   text-decoration: none;
   /* Убирает подчеркивание для ссылок */
+  width: 50%;
 }
 
 
@@ -162,6 +163,7 @@ label .close {
   opacity: 0;
   z-index: 0;
   color: black;
+   text-decoration: none; 
 }
 
 
@@ -285,9 +287,11 @@ label input:checked+.menu+ul {
 @keyframes ul {
   from {
       color: balck;
+      opacity: 0;
   }
   to {
       color: white;
+      opacity: 1;
   }
 }
 
@@ -299,6 +303,11 @@ label input:checked+.a {
 
 label ul {
 
+  width: 80%;
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   color: white;
   font-size: 24px;
   line-height: 2.4;
