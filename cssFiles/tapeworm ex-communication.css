@@ -83,6 +83,20 @@ max-width:800px;
 	
 }
 
+
+
+
+
+#text-block {
+	display: none;
+  }
+  
+  #read-more-checkbox:checked ~ #text-block {
+	display: block;
+  }
+
+  
+  
 @media (max-width:768px) {
 
 .container{

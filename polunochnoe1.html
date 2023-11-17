@@ -8,6 +8,42 @@
     <title>polunochnoe</title>
     <style>
 
+      /* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+      .conteiner{
+          width:  100%;
+          height: 100%;
+          display: none;
+          overflow: hidden;
+          background-color: rgba(0, 0, 0, 0.769);
+          position: relative;
+          z-index: 999;
+      }
+    .expandImg{
+      width: 40%;
+      height: auto;
+      position: absolute;
+      animation-name: "image";
+      animation-duration: 100ms;
+    }
+
+@keyframes image {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
     </style>
 </head>
 
@@ -23,27 +59,54 @@
   
       </script>
 
-    <div class="picture1"><img src="images/polunochnoe/1.webp"><p class="texForPicture"></p></div>
-    <div class="picture2"><img src="images/polunochnoe/2.webp"><p class="texForPicture"></p></div>
-    <div class="picture3"><img src="images/polunochnoe/3.webp"><p class="texForPicture">Tӯh Tyt Nāy, the patron saint of the mouth (river) Tukh and nearby water bodies; Tӯh Tyt (lit.: mouth of the river Tӯh) - on modern maps of the Tukhta River, a tributary of the Lozva).</p></div>
-    <div class="picture4"><img src="images/polunochnoe/4.webp"><p class="texForPicture">Malachite Flower</p></div>
-    <div class="picture5"><img src="images/polunochnoe/5.webp"><p class="texForPicture">Lӯpta ӯtay is a beautiful green caterpillar on the leaves</p></div>
-    <div class="picture6"><img src="images/polunochnoe/6.webp"><p class="texForPicture">Menquah-keeper of the Polum-Torum-Oyka River, Pelym (Ivdel district, Sverdlovsk region).
+<div class="conteiner"> 
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">CLOSE</span>
+  <img id="expandImg" class="expandImg">
+  <div id="imgtext"></div>
 
-      The Mēӈkv is a relict forest giant. According to folklore stories, the Menquas can be hostile to humans, but they can also but they can also be helpful. The Menquas are subdivided into several species: warriors, sanctuary guards, and cannibals.They live in their own time dimension. They have one more sense than a man. Therefore, a man does not meet with them, and if he encroaches on their territory, the Menquas will get their revenge in their own way: a man gets tension and fear
+</div>
+    <div class="picture1 pic"><img src="images/polunochnoe/1.webp" onclick="galeryImg(this)" ><p class="texForPicture"></p></div>
+    <div class="picture2 pic"><img src="images/polunochnoe/2.webp" onclick="galeryImg(this)" ><p class="texForPicture"></p></div>
+    <div class="picture3 pic"><img src="images/polunochnoe/3.webp" onclick="galeryImg(this)" ><p class="texForPicture">Tyh Tyt Nay, the patron saint of the mouth (river) Tukh and nearby water bodies; Tyh Tyt (lit.: mouth of the river Tyh) - on modern maps of the Tukhta River, a tributary of the Lozva).</p></div>
+    <div class="picture4 pic"><img src="images/polunochnoe/4.webp" onclick="galeryImg(this)" ><p class="texForPicture">Malachite Flower</p></div>
+    <div class="picture5 pic"><img src="images/polunochnoe/5.webp" onclick="galeryImg(this)" ><p class="texForPicture">Lypta ytay is a beautiful green caterpillar on the leaves</p></div>
+    <div class="picture6 pic"><img src="images/polunochnoe/6.webp" onclick="galeryImg(this)" ><p class="texForPicture">Menquah-keeper of the Polum-Torum-Oyka River, Pelym (Ivdel district, Sverdlovsk region).
+
+      The Meӈkv is a relict forest giant. According to folklore stories, the Menquas can be hostile to humans, but they can also but they can also be helpful. The Menquas are subdivided into several species: warriors, sanctuary guards, and cannibals.They live in their own time dimension. They have one more sense than a man. Therefore, a man does not meet with them, and if he encroaches on their territory, the Menquas will get their revenge in their own way: a man gets tension and fear
       
       </p></div>
-    <div class="picture7"><img src="images/polunochnoe/7.webp"><p class="texForPicture">Heart-Flower, left over from a Menquah who has fallen in love with a human being</p></div>
-    <div class="picture8"><img src="images/polunochnoe/8.webp"><p class="texForPicture">In the domains of the Mistress of the Denezhkin Stone Mountain. Legends speak of this mountain as a petrified magpie, whose eyes and white feathers turned into gems and whose black feathers turned into slate.</p></div>
-    <div class="picture9"><img src="images/polunochnoe/9.webp"><p class="texForPicture">Samsai-oyka near the Yalpyng-nir Mountain (Molybnyi Kamen, Aly-Yalpyng-nir, Ivdel district, Sverdlovsk region).
+    <div class="picture7 pic"><img src="images/polunochnoe/7.webp" onclick="galeryImg(this)" ><p class="texForPicture">Heart-Flower, left over from a Menquah who has fallen in love with a human being</p></div>
+    <div class="picture8 pic"><img src="images/polunochnoe/8.webp" onclick="galeryImg(this)" ><p class="texForPicture">In the domains of the Mistress of the Denezhkin Stone Mountain. Legends speak of this mountain as a petrified magpie, whose eyes and white feathers turned into gems and whose black feathers turned into slate.</p></div>
+    <div class="picture9 pic"><img src="images/polunochnoe/9.webp" onclick="galeryImg(this)" ><p class="texForPicture">Samsai-oyka near the Yalpyng-nir Mountain (Molybnyi Kamen, Aly-Yalpyng-nir, Ivdel district, Sverdlovsk region).
 
       Samsai-oyka used to be an evil spirit, one of the Kul-otyr descendants, invoking illnesses. With time his functions have changed, and he became a house spirit-keeper. Later he left for one of the tops of Yalpyng-nir</p></div>
-    <div class="picture10"><img  src="images/polunochnoe/10.webp"><p class="texForPicture">The two-faced god-owl Yipyg-oika, the old god who remembers humans</p></div>
-    <div class="picture11"><img  src="images/polunochnoe/11.webp"><p class="texForPicture"></p></div>
+    <div class="picture10 pic"><img  src="images/polunochnoe/10.webp" onclick="galeryImg(this)" ><p class="texForPicture">The two-faced god-owl Yipyg-oika, the old god who remembers humans</p></div>
+    <div class="picture11 pic"><img  src="images/polunochnoe/11.webp" onclick="galeryImg(this)" ><p class="texForPicture"></p></div>
                     
 
 
+<script>
+  function galeryImg(imgs){
+    
+    const conteiner = document.querySelector(".conteiner");
 
+    conteiner.style.display = "flex";
+
+
+    var expandImg = document.getElementById("expandImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+
+    const newTop = window.innerHeight/5;
+expandImg.style.top = newTop + 'px';
+
+const newLeft = window.innerWidth / 4;
+expandImg.style.left = newLeft + 'px';
+
+  }
+</script>
 <script src="jsFiles/polunochnoe.js"></script>
    
 

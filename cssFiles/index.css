@@ -56,6 +56,20 @@ back3 {
   background-size: 90%;
 }
 
+
+
+#text-block {
+  display: none;
+}
+
+#read-more-checkbox:checked ~ #text-block {
+  display: block;
+}
+
+
+
+
+
 .info{
   width: 100%;   
   height: 100%; 
