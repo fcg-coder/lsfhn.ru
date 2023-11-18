@@ -16,15 +16,12 @@ body{
 
 .label2{
     width: 40%;
-    display: flex;
-    justify-content: space-between;
 }
 
 
          /* Стили для контейнера слайдера */
          .slider-container {
-            width: 40%;
-            height: auto;
+            width: 45%;
             overflow: hidden;
             position: relative;
           }
@@ -45,7 +42,7 @@ body{
       
           /* Стили для изображений внутри слайдов */
           .slider-item img {
-            width: 100%;
+            width: auto;
             height: 100%;
             object-fit: cover;
           }

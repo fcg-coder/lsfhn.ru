@@ -23,7 +23,7 @@ body{
 
          /* Стили для контейнера слайдера */
          .slider-container {
-            width: 40%;
+            width: 45%;
             height: auto;
             overflow: hidden;
             position: relative;
