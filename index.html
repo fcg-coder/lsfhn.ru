@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width" , initial-scale=1.0">
 	<link href="cssFiles/index.css" rel="stylesheet">
+	<link href="fonts/fonts.css" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
@@ -123,6 +124,10 @@
 			color: white;
 			/*Задаём цвет ссылки*/
 		}
+
+		.TEXT{
+			max-width: 1000px; line-height: 1.6; margin: auto; text-align: center; font-size: 120%; font-family: Zapfino;
+		}
 	</style>
 </head>
 
@@ -154,7 +159,7 @@
 
 
 
-			<div style="max-width: 1000px; line-height: 1.3; margin: auto; text-align: center; font-size: 120%;">
+			<div  class="TEXT">
 			<input type="checkbox" id="read-more-checkbox" style="  appearance: none;">
 
 <div> Daria Ivans is a xenomedia artist from Saint Petersburg, who specializes in the magical analysis of digital algorithms and explores multi-layered spaces of virtual (im)materiality. Xyr wander through different dimensions of the virtual worlds, playing algo-rhytms, dreaming in the Y2K midsummer shadows, outer space-shipping through unexplored areas of Web in a constant search for dig-artifacts and amulets to forge extensions of inter-dimensional connections.
@@ -165,9 +170,14 @@
   const checkbox = document.getElementById('read-more-checkbox');
   const label = document.getElementById('read-more-label');
 
+  const TEXT = document.querySelector('.TEXT');
+	
+
   checkbox.addEventListener('change', function() {
     if (this.checked) {
       label.textContent = ''; // Удалить текст "read more"
+	TEXT.style.fontFamily = 'Angelized';
+
     } else {
       label.textContent = 'read more...'; // Восстановить текст "read more"
     }

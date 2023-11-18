@@ -27,7 +27,7 @@
       image.style.opacity = 0;
       setTimeout(function() {
         image.style.opacity = 1;
-      }, Math.random()* 50000);
+      }, Math.random()* 500000);
     });
 
     setTimeout(opacityToTime, 3000); // Повторить через 3 секунды
