@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/room web 1.0.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/fonts.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>room web 1.0</title>
+    <style>
+    </style>
+</head>
+<body>
+
+  <div style="display: block; position: absolute; width: 50%; margin: auto; height: 100vh; z-index: -90; background-color: black;"></div>
+    <div class="label1">
+        <div style="margin: 20px; "> <img src="{% static 'images/spaceweb1.png' %}"  style="height: 20vh; width: auto;"> </div>
+        <div style="margin: 20px; "> <img src="images/basement.png"  style="height: 20vh; width: auto;"> </div>
+
+    </div>
+
+    <div class="label2">
+        <div style="padding: 10px; text-align: justify ; color: grey; font-family: 'FKRasterRomanCompactTrial-Sharp'; width: 700%;">The Web 1.0 room comprises two distinct spaces, namely, the Internet's girl room and the basement area. The textures in the former have been created using KidPix, a child-oriented drawing program from the year 2001, and are designed to resemble the graphic style of the early web. Voxel models and GIFs are also employed to generate the early Internet environment and resemble, for instance, GeoCities page. The design of the early web pages was quite different from what we can see today.
+            The web design of custom-made pages was based on table structure and filled with links leading to other places on the internet. When you enter a website, you see the “welcome” signs and other signatures that were made by the website’s owner, resemble visiting somebody’s house. </div>
+        
+        <div style="padding: 10px; text-align: justify ;font-family: 'webfont'; font-size: 120%; color: rgb(239, 191, 222);">That was an idea behind creating the web 1.0 space in our project – to use the web design patterns of early web to construct the interior architecture for the pro-Metaverse platform.
+            We would like to see this technique not only as a nostalgic reference but as a means of complex and unexpected world-building, where internal connections between worlds and exploratory archives are established. In the basement space, we have arranged several such external and internal archives (on are.na, Tumblr, and worlds in VRC), which are the result of theoretical and practical research in virtual worlds. The transportation between different platforms and the limitless structure of the world are important to us as a technique for transversal world-building within the pro-Metaverse.</div>
+        
+        </div>
+
+        <div class="slider-container">
+            <ul class="slider-list">
+              <!-- Добавьте каждому слайду элемент li с изображением -->
+              <li class="slider-item">
+                <img src="room1Img/1.png">
+              </li> 
+              
+              
+              
+              <li class="slider-item">
+
+                <img src="room1Img/2.png">
+              </li>
+
+              
+              
+              
+              <li class="slider-item">
+
+                <img src="room1Img/3.png">
+              </li>
+
+              
+              
+              
+              <li class="slider-item">
+
+                <img src="room1Img/4.png">
+              </li>
+
+              
+              
+              
+              <li class="slider-item">
+
+                <img src="room1Img/5.png">
+              </li>
+
+              
+              
+              
+              <li class="slider-item">
+
+                <img src="room1Img/6.png">
+              </li>
+
+              
+              
+              
+              <li class="slider-item">
+
+                <img src="room1Img/7.png">
+              </li>
+
+              
+              
+              
+              <li class="slider-item">
+
+                <img src="room1Img/8.png">
+              </li>
+
+
+
+            </ul>
+          </div>
+
+  <img src="images/randGif/1.gif" class="randGif">
+  <img src="images/randGif/2.gif" class="randGif">
+  <img src="images/randGif/3.gif" class="randGif">
+  <img src="images/randGif/4.gif" class="randGif">
+  <img src="images/randGif/5.gif" class="randGif">
+  <img src="images/randGif/6.gif" class="randGif">
+  <img src="images/randGif/7.gif" class="randGif">
+  <img src="images/randGif/8.gif" class="randGif">
+  <img src="images/randGif/9.gif" class="randGif">
+  <img src="images/randGif/10.gif" class="randGif">
+  <img src="images/randGif/11.gif" class="randGif">
+  <img src="images/randGif/12.gif" class="randGif">
+  <img src="images/randGif/13.gif" class="randGif">
+  <img src="images/randGif/14.gif" class="randGif">
+  <img src="images/randGif/15.gif" class="randGif">
+  <img src="images/randGif/16.gif" class="randGif">
+  <img src="images/randGif/17.gif" class="randGif">
+  <img src="images/randGif/18.gif" class="randGif">
+  <img src="images/randGif/19.gif" class="randGif">
+  <img src="images/randGif/20.gif" class="randGif">
+  <img src="images/randGif/21.gif" class="randGif">
+  <img src="images/randGif/22.gif" class="randGif">
+  <img src="images/randGif/23.gif" class="randGif">
+  <img src="images/randGif/24.gif" class="randGif">
+  <img src="images/randGif/25.gif" class="randGif">
+  <img src="images/randGif/26.gif" class="randGif">
+  <img src="images/randGif/27.gif" class="randGif">
+
+          <script src="randGif.js"></script>
+          <script>
+            // JavaScript для автоматического переключения слайдов
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.slider-item');
+            const slider = document.querySelector('.slider-list');
+            const slideWidth = slides[0].clientWidth;
+        
+            setInterval(() => {
+              currentSlide = (currentSlide + 1) % slides.length;
+              slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+            }, 3000);
+          </script>
+</body>
+</html>

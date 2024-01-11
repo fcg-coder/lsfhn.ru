@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="{% static 'css/polunochnoe1.css' %}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="{% static 'images/icon.png' %}" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>polunochnoe</title>
+
+    <title>polunochnoe</title>
+    <style>
+
+      /* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+      .conteiner{
+          width:  100%;
+          height: 100%;
+          display: none;
+          overflow: hidden;
+          background-color: rgba(0, 0, 0, 0.769);
+          position: relative;
+          z-index: 999;
+      }
+    .expandImg{
+      width: 40%;
+      height: auto;
+      position: absolute;
+      animation-name: "image";
+      animation-duration: 100ms;
+    }
+
+@keyframes image {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+    </style>
+</head>
+
+<body>
+    
+
+<div class="conteiner"> 
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">CLOSE</span>
+  <img id="expandImg" class="expandImg">
+  <div id="imgtext"></div>
+
+</div>
+    <div class="picture1 pic"><img src="{% static 'images/polunochnoe/1.webp' %}" onclick="galeryImg(this)" ><p class="texForPicture"></p></div>
+    <div class="picture2 pic"><img src="{% static 'images/polunochnoe/2.webp' %}" onclick="galeryImg(this)" ><p class="texForPicture"></p></div>
+    <div class="picture3 pic"><img src="{% static 'images/polunochnoe/3.webp' %}" onclick="galeryImg(this)" ><p class="texForPicture">Tyh Tyt Nay, the patron saint of the mouth (river) Tukh and nearby water bodies; Tyh Tyt (lit.: mouth of the river Tyh) - on modern maps of the Tukhta River, a tributary of the Lozva).</p></div>
+    <div class="picture4 pic"><img src="{% static 'images/polunochnoe/4.webp' %}" onclick="galeryImg(this)" ><p class="texForPicture">Malachite Flower</p></div>
+    <div class="picture5 pic"><img src="{% static 'images/polunochnoe/5.webp' %}" onclick="galeryImg(this)" ><p class="texForPicture">Lypta ytay is a beautiful green caterpillar on the leaves</p></div>
+    <div class="picture6 pic"><img src="{% static 'images/polunochnoe/6.webp' %}" onclick="galeryImg(this)" ><p class="texForPicture">Menquah-keeper of the Polum-Torum-Oyka River, Pelym (Ivdel district, Sverdlovsk region).
+
+      The Meӈkv is a relict forest giant. According to folklore stories, the Menquas can be hostile to humans, but they can also but they can also be helpful. The Menquas are subdivided into several species: warriors, sanctuary guards, and cannibals.They live in their own time dimension. They have one more sense than a man. Therefore, a man does not meet with them, and if he encroaches on their territory, the Menquas will get their revenge in their own way: a man gets tension and fear
+      
+      </p></div>
+    <div class="picture7 pic"><img src="{% static 'images/polunochnoe/7.webp' %}" onclick="galeryImg(this)" ><p class="texForPicture">Heart-Flower, left over from a Menquah who has fallen in love with a human being</p></div>
+    <div class="picture8 pic"><img src="{% static 'images/polunochnoe/8.webp' %}" onclick="galeryImg(this)" ><p class="texForPicture">In the domains of the Mistress of the Denezhkin Stone Mountain. Legends speak of this mountain as a petrified magpie, whose eyes and white feathers turned into gems and whose black feathers turned into slate.</p></div>
+    <div class="picture9 pic"><img src="{% static 'images/polunochnoe/9.webp' %}" onclick="galeryImg(this)" ><p class="texForPicture">Samsai-oyka near the Yalpyng-nir Mountain (Molybnyi Kamen, Aly-Yalpyng-nir, Ivdel district, Sverdlovsk region).
+
+      Samsai-oyka used to be an evil spirit, one of the Kul-otyr descendants, invoking illnesses. With time his functions have changed, and he became a house spirit-keeper. Later he left for one of the tops of Yalpyng-nir</p></div>
+    <div class="picture10 pic"><img  src="{% static 'images/polunochnoe/10.webp' %}" onclick="galeryImg(this)" ><p class="texForPicture">The two-faced god-owl Yipyg-oika, the old god who remembers humans</p></div>
+    <div class="picture11 pic"><img  src="{% static 'images/polunochnoe/11.webp' %}" onclick="galeryImg(this)" ><p class="texForPicture"></p></div>
+                    
+
+
+<script>
+  function galeryImg(imgs){
+    
+    const conteiner = document.querySelector(".conteiner");
+
+    conteiner.style.display = "flex";
+
+
+    var expandImg = document.getElementById("expandImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+
+    const newTop = window.innerHeight/5;
+expandImg.style.top = newTop + 'px';
+
+const newLeft = window.innerWidth / 4;
+expandImg.style.left = newLeft + 'px';
+
+  }
+</script>
+<script src="{% static 'js/polunochnoe.js' %}"></script>
+   
+
+</body>
+
+</html>
