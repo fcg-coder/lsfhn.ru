@@ -1,6 +1,5 @@
 body{
-    background-color: black;
-    overflow: hidden;
+    background-color: black;;
     display: flex;
     color: white;
     flex-direction: column;

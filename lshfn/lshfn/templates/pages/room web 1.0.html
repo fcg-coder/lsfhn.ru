@@ -9,14 +9,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>room web 1.0</title>
     <style>
+.intro {
+	display:  flex;
+	justify-content:space-around ;
+	width: 100%;
+		
+	height: 70%;
+	margin: 0 auto;
+  }
+
+  .container_slider_css {
+    margin: 45px auto;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    }
+
+    .photo_slider_css {
+    position: absolute;
+    animation: round 16s infinite;
+    opacity: 0;
+    width: 100%;
+    }
+
+    @keyframes round {
+    25% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+    }
+    img:nth-child(1) {
+    animation-delay: 12s;
+    }
+    img:nth-child(2) {
+    animation-delay: 8s;
+    }
+    img:nth-child(3) {
+    animation-delay: 4s;
+    }
+    img:nth-child(4) {
+    animation-delay: 0s;
+    }
     </style>
 </head>
 <body>
 
   <div style="display: block; position: absolute; width: 50%; margin: auto; height: 100vh; z-index: -90; background-color: black;"></div>
     <div class="label1">
-        <div style="margin: 20px; "> <img src="{% static 'images/spaceweb1.png' %}"  style="height: 20vh; width: auto;"> </div>
-        <div style="margin: 20px; "> <img src="images/basement.png"  style="height: 20vh; width: auto;"> </div>
+        <div style="margin: 20px; "> <img src="{% static 'images/roomImg/spaceweb1.png' %}"  style="height: 20vh; width: auto;"> </div>
+        <div style="margin: 20px; "> <img src="{% static 'images/roomImg/basement.png' %}"  style="height: 20vh; width: auto;"> </div>
 
     </div>
 
@@ -29,102 +74,54 @@
         
         </div>
 
-        <div class="slider-container">
-            <ul class="slider-list">
-              <!-- Добавьте каждому слайду элемент li с изображением -->
-              <li class="slider-item">
-                <img src="room1Img/1.png">
-              </li> 
-              
-              
-              
-              <li class="slider-item">
+       
+        <div class="intro">
+      
+              <div class="container_slider_css" > 
+              <img class='photo_slider_css'  src="{% static 'images/roomImg/1.png'%}" alt="" /> 
+              <img class='photo_slider_css'  src="{% static 'images/roomImg/2.png'%}" alt="" /> 
+              <img class='photo_slider_css'  src="{% static 'images/roomImg/3.png'%}" alt="" /> 
+              <img class='photo_slider_css'  src="{% static 'images/roomImg/4.png'%}" alt="" />
+              <img class='photo_slider_css'  src="{% static 'images/roomImg/5.png'%}" alt="" />
+               <img class='photo_slider_css'  src="{% static 'images/roomImg/6.png'%}" alt="" /> 
+               <img class='photo_slider_css'  src="{% static 'images/roomImg/7.png'%}" alt="" /> 
+               <img class='photo_slider_css'  src="{% static 'images/roomImg/8.png'%}" alt="" /> 
+              </div>
 
-                <img src="room1Img/2.png">
-              </li>
+            </div>
+             
 
-              
-              
-              
-              <li class="slider-item">
+       
+        
+  <img src="{% static 'images/randGif/1.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/2.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/3.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/4.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/5.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/6.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/7.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/8.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/9.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/10.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/11.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/12.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/13.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/14.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/15.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/16.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/17.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/18.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/19.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/20.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/21.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/22.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/23.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/24.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/25.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/26.gif'%}" class="randGif">
+  <img src="{% static 'images/randGif/27.gif'%}" class="randGif">
 
-                <img src="room1Img/3.png">
-              </li>
-
-              
-              
-              
-              <li class="slider-item">
-
-                <img src="room1Img/4.png">
-              </li>
-
-              
-              
-              
-              <li class="slider-item">
-
-                <img src="room1Img/5.png">
-              </li>
-
-              
-              
-              
-              <li class="slider-item">
-
-                <img src="room1Img/6.png">
-              </li>
-
-              
-              
-              
-              <li class="slider-item">
-
-                <img src="room1Img/7.png">
-              </li>
-
-              
-              
-              
-              <li class="slider-item">
-
-                <img src="room1Img/8.png">
-              </li>
-
-
-
-            </ul>
-          </div>
-
-  <img src="images/randGif/1.gif" class="randGif">
-  <img src="images/randGif/2.gif" class="randGif">
-  <img src="images/randGif/3.gif" class="randGif">
-  <img src="images/randGif/4.gif" class="randGif">
-  <img src="images/randGif/5.gif" class="randGif">
-  <img src="images/randGif/6.gif" class="randGif">
-  <img src="images/randGif/7.gif" class="randGif">
-  <img src="images/randGif/8.gif" class="randGif">
-  <img src="images/randGif/9.gif" class="randGif">
-  <img src="images/randGif/10.gif" class="randGif">
-  <img src="images/randGif/11.gif" class="randGif">
-  <img src="images/randGif/12.gif" class="randGif">
-  <img src="images/randGif/13.gif" class="randGif">
-  <img src="images/randGif/14.gif" class="randGif">
-  <img src="images/randGif/15.gif" class="randGif">
-  <img src="images/randGif/16.gif" class="randGif">
-  <img src="images/randGif/17.gif" class="randGif">
-  <img src="images/randGif/18.gif" class="randGif">
-  <img src="images/randGif/19.gif" class="randGif">
-  <img src="images/randGif/20.gif" class="randGif">
-  <img src="images/randGif/21.gif" class="randGif">
-  <img src="images/randGif/22.gif" class="randGif">
-  <img src="images/randGif/23.gif" class="randGif">
-  <img src="images/randGif/24.gif" class="randGif">
-  <img src="images/randGif/25.gif" class="randGif">
-  <img src="images/randGif/26.gif" class="randGif">
-  <img src="images/randGif/27.gif" class="randGif">
-
-          <script src="randGif.js"></script>
+          <script src="{% static 'js/randGif.js'%}"></script>
           <script>
             // JavaScript для автоматического переключения слайдов
             let currentSlide = 0;

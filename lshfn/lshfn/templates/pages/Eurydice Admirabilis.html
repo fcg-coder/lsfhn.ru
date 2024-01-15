@@ -1,4 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+{% load static %}
 <html style="width: 100%; cursor: url('images/cursor.png'), auto;">
  <head>
  <meta charset="UTF-8">
@@ -6,10 +8,10 @@
   <meta name="viewport" content=
     "width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" href="cssFiles/Eurydice Admirabilis.css">
+  <link rel="stylesheet" href="{% static 'css/Eurydice Admirabilis.css'%}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="{% static 'images/icon.png'%} " type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -31,10 +33,10 @@
 	  
 	
 <div class="container_slider_css" >
-  <img class='photo_slider_css'  src="images/coral/anime_coral_1.png" alt="" />
-  <img class='photo_slider_css'  src="images/coral/anime_coral_2.png" alt="" />
-  <img class='photo_slider_css'  src="images/coral/coral1.png" alt="" />
-  <img class='photo_slider_css'  src="images/coral/coral2.png" alt="" />
+  <img class='photo_slider_css'  src="{% static 'images/coral/anime_coral_1.png'%}" alt="" />
+  <img class='photo_slider_css'  src="{% static 'images/coral/anime_coral_2.png'%}" alt="" />
+  <img class='photo_slider_css'  src="{% static 'images/coral/coral1.png'%}" alt="" />
+  <img class='photo_slider_css'  src="{% static 'images/coral/coral2.png'%}" alt="" />
 </div>
 <div class="text"> 
     This project was born at the intersection of my interest in the coral bleaching 
